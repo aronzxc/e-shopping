@@ -25,6 +25,7 @@
 
 <script>
 	window.menu = '${title}';
+	window.contextRoot = '${contextRoot}';
 </script>
 
 <!-- Bootstrap core CSS -->
@@ -33,8 +34,12 @@
 <!-- Bootstrap minty CSS -->
 <link href="${css}/bootstrap.minty.css" rel="stylesheet">
 
+<!-- Bootstrap DATATABLES -->
+<link href="${css}/dataTables.bootstrap4.css" rel="stylesheet">
+
 <!-- Custom styles for this template -->
 <link href="${css}/myapp.css" rel="stylesheet">
+<link href="${css}/glyphicons.css" rel="stylesheet">
 
 </head>
 
@@ -70,6 +75,11 @@
 		<%@include file="listProducts.jsp"%>
 	</c:if>
 	
+	<!-- Load only when user clicks show products -->
+	<c:if test="${userClickShowProduct == true}">
+		<%@include file="singleProduct.jsp"%>
+	</c:if>
+	
 	</div>
 	</div>
 	<!-- Footer -->
@@ -78,6 +88,13 @@
 	<!-- Bootstrap core JavaScript -->
 	<script src="${js}/jquery.min.js"></script>
 	<script src="${js}/bootstrap.bundle.min.js"></script>
+	
+	<!-- Datatable Plugin -->
+	<script src="${js}/jquery.dataTables.js"></script>
+	
+	<!-- Datatable Bootstrap Script -->
+	<script src="${js}/dataTables.bootstrap4.js"></script>
+	
 	
 	<!-- Self Coded javascript -->
 	<script src="${js}/myapp.js"></script>
