@@ -134,8 +134,6 @@ dd {
 	margin-left: 0
 }
 
-
-
 dfn {
 	font-style: italic
 }
@@ -175,13 +173,39 @@ a:hover {
 	text-decoration: underline
 }
 
-a:not ([href] ):not ([tabindex] ){
-	color: inherit;
-	text-decoration: none
-}
+a
+:not
+ 
+(
+[
+href
+]
+ 
+)
+:not
+ 
+(
+[
+tabindex
+]
+ 
+){
+color
+:
+ 
+inherit
+;
 
+	
+text-decoration
+:
+ 
+none
+
+
+}
 a:not ([href] ):not ([tabindex] ):hover, a:not ([href] ):not ([tabindex]
-	):focus {
+	 ):focus {
 	color: inherit;
 	text-decoration: none
 }
@@ -211,10 +235,20 @@ img {
 	border-style: none
 }
 
-svg:not (:root ){
-	overflow: hidden
-}
+svg
+:not
+ 
+(
+:root
+ 
+){
+overflow
+:
+ 
+hidden
 
+
+}
 table {
 	border-collapse: collapse
 }
@@ -438,16 +472,25 @@ mark, .mark {
 	display: inline-block
 }
 
-.list-inline-item:not (:last-child ){
-	margin-right: 0.5rem
-}
+.list-inline-item
+:not
+ 
+(
+:last-child
+ 
+){
+margin-right
+:
+ 
+0
+.5rem
 
+
+}
 .initialism {
 	font-size: 90%;
 	text-transform: uppercase
 }
-
-
 
 .img-fluid {
 	max-width: 100%;
@@ -1960,10 +2003,37 @@ pre code {
 	opacity: 1
 }
 
-select.form-control:not ([size] ):not ([multiple] ){
-	height: calc(2.25rem + 2px)
-}
+select
+.form-control
+:not
+ 
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+){
+height
+:
+ 
+calc
+(2
+.25rem
++
+2
+px
+)
 
+
+}
 select.form-control:focus::-ms-value {
 	color: #495057;
 	background-color: #fff
@@ -2031,15 +2101,150 @@ select.form-control:focus::-ms-value {
 	border-radius: 0.2rem
 }
 
-select.form-control-sm:not ([size] ):not ([multiple] ), .input-group-sm>select.form-control:not
-	([size] ):not ([multiple] ), .input-group-sm>.input-group-prepend>select.input-group-text:not
-	([size] ):not ([multiple] ), .input-group-sm>.input-group-append>select.input-group-text:not
-	([size] ):not ([multiple] ), .input-group-sm>.input-group-prepend>select.btn:not
-	([size] ):not ([multiple] ), .input-group-sm>.input-group-append>select.btn:not
-	([size] ):not ([multiple] ){
-	height: calc(1.8125rem + 2px)
-}
+select
+.form-control-sm
+:not
+ 
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-sm
+>
+select
+.form-control
+:not
 
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-sm
+>
+.input-group-prepend
+>
+select
+.input-group-text
+:not
+
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-sm
+>
+.input-group-append
+>
+select
+.input-group-text
+:not
+
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-sm
+>
+.input-group-prepend
+>
+select
+.btn
+:not
+
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-sm
+>
+.input-group-append
+>
+select
+.btn
+:not
+
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+){
+height
+:
+ 
+calc
+(1
+.8125rem
++
+2
+px
+)
+
+
+}
 .form-control-lg, .input-group-lg>.form-control, .input-group-lg>.input-group-prepend>.input-group-text,
 	.input-group-lg>.input-group-append>.input-group-text, .input-group-lg>.input-group-prepend>.btn,
 	.input-group-lg>.input-group-append>.btn {
@@ -2049,15 +2254,150 @@ select.form-control-sm:not ([size] ):not ([multiple] ), .input-group-sm>select.f
 	border-radius: 0.3rem
 }
 
-select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.form-control:not
-	([size] ):not ([multiple] ), .input-group-lg>.input-group-prepend>select.input-group-text:not
-	([size] ):not ([multiple] ), .input-group-lg>.input-group-append>select.input-group-text:not
-	([size] ):not ([multiple] ), .input-group-lg>.input-group-prepend>select.btn:not
-	([size] ):not ([multiple] ), .input-group-lg>.input-group-append>select.btn:not
-	([size] ):not ([multiple] ){
-	height: calc(2.875rem + 2px)
-}
+select
+.form-control-lg
+:not
+ 
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-lg
+>
+select
+.form-control
+:not
 
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-lg
+>
+.input-group-prepend
+>
+select
+.input-group-text
+:not
+
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-lg
+>
+.input-group-append
+>
+select
+.input-group-text
+:not
+
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-lg
+>
+.input-group-prepend
+>
+select
+.btn
+:not
+
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+),
+.input-group-lg
+>
+.input-group-append
+>
+select
+.btn
+:not
+
+	
+(
+[
+size
+]
+ 
+)
+:not
+ 
+(
+[
+multiple
+]
+ 
+){
+height
+:
+ 
+calc
+(2
+.875rem
++
+2
+px
+)
+
+
+}
 .form-group {
 	margin-bottom: 1rem
 }
@@ -2157,11 +2497,11 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 }
 
 .was-validated .form-control:valid ~ .valid-feedback, .was-validated .form-control:valid 
-	~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback,
+	 ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback,
 	.form-control.is-valid ~ .valid-tooltip, .was-validated .custom-select:valid 
-	~ .valid-feedback, .was-validated .custom-select:valid ~ .valid-tooltip,
-	.custom-select.is-valid ~ .valid-feedback, .custom-select.is-valid ~
-	.valid-tooltip {
+	 ~ .valid-feedback, .was-validated .custom-select:valid ~
+	.valid-tooltip, .custom-select.is-valid ~ .valid-feedback,
+	.custom-select.is-valid ~ .valid-tooltip {
 	display: block
 }
 
@@ -2171,7 +2511,7 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 }
 
 .was-validated .form-check-input:valid ~ .valid-feedback, .was-validated .form-check-input:valid 
-	~ .valid-tooltip, .form-check-input.is-valid ~ .valid-feedback,
+	 ~ .valid-tooltip, .form-check-input.is-valid ~ .valid-feedback,
 	.form-check-input.is-valid ~ .valid-tooltip {
 	display: block
 }
@@ -2189,13 +2529,13 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 .was-validated .custom-control-input:valid ~ .valid-feedback,
 	.was-validated .custom-control-input:valid ~ .valid-tooltip,
 	.custom-control-input.is-valid ~ .valid-feedback, .custom-control-input.is-valid 
-	~ .valid-tooltip {
+	 ~ .valid-tooltip {
 	display: block
 }
 
 .was-validated .custom-control-input:valid:checked ~
 	.custom-control-label::before, .custom-control-input.is-valid:checked 
-	~ .custom-control-label::before {
+	 ~ .custom-control-label::before {
 	background-color: #8dc450
 }
 
@@ -2219,7 +2559,7 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 .was-validated .custom-file-input:valid ~ .valid-feedback,
 	.was-validated .custom-file-input:valid ~ .valid-tooltip,
 	.custom-file-input.is-valid ~ .valid-feedback, .custom-file-input.is-valid 
-	~ .valid-tooltip {
+	 ~ .valid-tooltip {
 	display: block
 }
 
@@ -2266,9 +2606,9 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 }
 
 .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .form-control:invalid 
-	~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
+	 ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback,
 	.form-control.is-invalid ~ .invalid-tooltip, .was-validated .custom-select:invalid 
-	~ .invalid-feedback, .was-validated .custom-select:invalid ~
+	 ~ .invalid-feedback, .was-validated .custom-select:invalid ~
 	.invalid-tooltip, .custom-select.is-invalid ~ .invalid-feedback,
 	.custom-select.is-invalid ~ .invalid-tooltip {
 	display: block
@@ -2282,7 +2622,7 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 .was-validated .form-check-input:invalid ~ .invalid-feedback,
 	.was-validated .form-check-input:invalid ~ .invalid-tooltip,
 	.form-check-input.is-invalid ~ .invalid-feedback, .form-check-input.is-invalid 
-	~ .invalid-tooltip {
+	 ~ .invalid-tooltip {
 	display: block
 }
 
@@ -2305,13 +2645,13 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 
 .was-validated .custom-control-input:invalid:checked ~
 	.custom-control-label::before, .custom-control-input.is-invalid:checked 
-	~ .custom-control-label::before {
+	 ~ .custom-control-label::before {
 	background-color: #e2343a
 }
 
 .was-validated .custom-control-input:invalid:focus ~
 	.custom-control-label::before, .custom-control-input.is-invalid:focus 
-	~ .custom-control-label::before {
+	 ~ .custom-control-label::before {
 	-webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(199, 28, 34, 0.25);
 	box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(199, 28, 34, 0.25)
 }
@@ -2329,7 +2669,7 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 .was-validated .custom-file-input:invalid ~ .invalid-feedback,
 	.was-validated .custom-file-input:invalid ~ .invalid-tooltip,
 	.custom-file-input.is-invalid ~ .invalid-feedback, .custom-file-input.is-invalid 
-	~ .invalid-tooltip {
+	 ~ .invalid-tooltip {
 	display: block
 }
 
@@ -2469,12 +2809,28 @@ select.form-control-lg:not ([size] ):not ([multiple] ), .input-group-lg>select.f
 	opacity: 0.65
 }
 
-.btn:not (:disabled ):not (.disabled ){
-	cursor: pointer
-}
+.btn
+:not
+ 
+(
+:disabled
+ 
+)
+:not
+ 
+(
+.disabled
+ 
+){
+cursor
+:
+ 
+pointer
 
+
+}
 .btn:not (:disabled ):not (.disabled ):active, .btn:not (:disabled ):not
-	(.disabled ).active {
+	 (.disabled ).active {
 	background-image: none
 }
 
@@ -2506,7 +2862,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-primary:not (:disabled ):not (.disabled ):active, .btn-primary:not
-	(:disabled ):not (.disabled ).active, .show>.btn-primary.dropdown-toggle
+	 (:disabled ):not (.disabled ).active, .show>.btn-primary.dropdown-toggle
 	{
 	color: #fff;
 	background-color: #178acc;
@@ -2544,7 +2900,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-secondary:not (:disabled ):not (.disabled ):active, .btn-secondary:not
-	(:disabled ):not (.disabled ).active, .show>.btn-secondary.dropdown-toggle
+	 (:disabled ):not (.disabled ).active, .show>.btn-secondary.dropdown-toggle
 	{
 	color: #212529;
 	background-color: #cbd3da;
@@ -2582,7 +2938,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-success:not (:disabled ):not (.disabled ):active, .btn-success:not
-	(:disabled ):not (.disabled ).active, .show>.btn-success.dropdown-toggle
+	 (:disabled ):not (.disabled ).active, .show>.btn-success.dropdown-toggle
 	{
 	color: #fff;
 	background-color: #59822c;
@@ -2620,14 +2976,14 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-info:not (:disabled ):not (.disabled ):active, .btn-info:not (:disabled
-	):not (.disabled ).active, .show>.btn-info.dropdown-toggle {
+	 ):not (.disabled ).active, .show>.btn-info.dropdown-toggle {
 	color: #fff;
 	background-color: #022241;
 	border-color: #011c35
 }
 
 .btn-info:not (:disabled ):not (.disabled ):active:focus, .btn-info:not
-	(:disabled ):not (.disabled ).active:focus, .show>.btn-info.dropdown-toggle:focus
+	 (:disabled ):not (.disabled ).active:focus, .show>.btn-info.dropdown-toggle:focus
 	{
 	-webkit-box-shadow: 0 0 0 0.2rem rgba(3, 60, 115, 0.5);
 	box-shadow: 0 0 0 0.2rem rgba(3, 60, 115, 0.5)
@@ -2657,7 +3013,7 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-warning:not (:disabled ):not (.disabled ):active, .btn-warning:not
-	(:disabled ):not (.disabled ).active, .show>.btn-warning.dropdown-toggle
+	 (:disabled ):not (.disabled ).active, .show>.btn-warning.dropdown-toggle
 	{
 	color: #fff;
 	background-color: #aa4200;
@@ -2695,14 +3051,14 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-danger:not (:disabled ):not (.disabled ):active, .btn-danger:not (:disabled
-	):not (.disabled ).active, .show>.btn-danger.dropdown-toggle {
+	 ):not (.disabled ).active, .show>.btn-danger.dropdown-toggle {
 	color: #fff;
 	background-color: #9a161a;
 	border-color: #8f1418
 }
 
 .btn-danger:not (:disabled ):not (.disabled ):active:focus, .btn-danger:not
-	(:disabled ):not (.disabled ).active:focus, .show>.btn-danger.dropdown-toggle:focus
+	 (:disabled ):not (.disabled ).active:focus, .show>.btn-danger.dropdown-toggle:focus
 	{
 	-webkit-box-shadow: 0 0 0 0.2rem rgba(199, 28, 34, 0.5);
 	box-shadow: 0 0 0 0.2rem rgba(199, 28, 34, 0.5)
@@ -2732,14 +3088,14 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-light:not (:disabled ):not (.disabled ):active, .btn-light:not (:disabled
-	):not (.disabled ).active, .show>.btn-light.dropdown-toggle {
+	 ):not (.disabled ).active, .show>.btn-light.dropdown-toggle {
 	color: #212529;
 	background-color: #dae0e5;
 	border-color: #d3d9df
 }
 
 .btn-light:not (:disabled ):not (.disabled ):active:focus, .btn-light:not
-	(:disabled ):not (.disabled ).active:focus, .show>.btn-light.dropdown-toggle:focus
+	 (:disabled ):not (.disabled ).active:focus, .show>.btn-light.dropdown-toggle:focus
 	{
 	-webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
 	box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5)
@@ -2769,14 +3125,14 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-dark:not (:disabled ):not (.disabled ):active, .btn-dark:not (:disabled
-	):not (.disabled ).active, .show>.btn-dark.dropdown-toggle {
+	 ):not (.disabled ).active, .show>.btn-dark.dropdown-toggle {
 	color: #fff;
 	background-color: #1d2124;
 	border-color: #171a1d
 }
 
 .btn-dark:not (:disabled ):not (.disabled ):active:focus, .btn-dark:not
-	(:disabled ):not (.disabled ).active:focus, .show>.btn-dark.dropdown-toggle:focus
+	 (:disabled ):not (.disabled ).active:focus, .show>.btn-dark.dropdown-toggle:focus
 	{
 	-webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 	box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5)
@@ -3400,13 +3756,13 @@ tbody.collapse.show {
 }
 
 .btn-group>.btn:not (:last-child ):not (.dropdown-toggle ), .btn-group>.btn-group:not
-	(:last-child )>.btn {
+	 (:last-child )>.btn {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0
 }
 
 .btn-group>.btn:not (:first-child ), .btn-group>.btn-group:not (:first-child
-	)>.btn {
+	 )>.btn {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0
 }
@@ -3463,7 +3819,7 @@ tbody.collapse.show {
 }
 
 .btn-group-vertical>.btn:not (:first-child ), .btn-group-vertical>.btn-group:not
-	(:first-child )>.btn {
+	 (:first-child )>.btn {
 	border-top-left-radius: 0;
 	border-top-right-radius: 0
 }
@@ -3516,18 +3872,62 @@ tbody.collapse.show {
 	margin-left: -1px
 }
 
-.input-group>.form-control:not (:last-child ), .input-group>.custom-select:not
-	(:last-child ){
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0
-}
+.input-group
+>
+.form-control
+:not
+ 
+(
+:last-child
+ 
+),
+.input-group
+>
+.custom-select
+:not
 
-.input-group>.form-control:not (:first-child ), .input-group>.custom-select:not
-	(:first-child ){
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0
+	
+(
+:last-child
+ 
+){
+border-top-right-radius
+:
+ 
+0;
+border-bottom-right-radius
+:
+ 
+0
 }
+.input-group
+>
+.form-control
+:not
+ 
+(
+:first-child
+ 
+),
+.input-group
+>
+.custom-select
+:not
 
+	
+(
+:first-child
+ 
+){
+border-top-left-radius
+:
+ 
+0;
+border-bottom-left-radius
+:
+ 
+0
+}
 .input-group>.custom-file {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -3603,25 +4003,150 @@ tbody.collapse.show {
 	margin-top: 0
 }
 
-.input-group>.input-group-prepend>.btn, .input-group>.input-group-prepend>.input-group-text,
-	.input-group>.input-group-append:not (:last-child )>.btn, .input-group>.input-group-append:not
-	(:last-child )>.input-group-text, .input-group>.input-group-append:last-child>.btn:not
-	(:last-child ):not (.dropdown-toggle ), .input-group>.input-group-append:last-child>.input-group-text:not
-	(:last-child ){
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0
-}
+.input-group
+>
+.input-group-prepend
+>
+.btn
+,
+.input-group
+>
+.input-group-prepend
+>
+.input-group-text
+,
+.input-group
+>
+.input-group-append
+:not
+ 
+(
+:last-child
+ 
+)>
+.btn
+,
+.input-group
+>
+.input-group-append
+:not
 
-.input-group>.input-group-append>.btn, .input-group>.input-group-append>.input-group-text,
-	.input-group>.input-group-prepend:not (:first-child )>.btn,
-	.input-group>.input-group-prepend:not (:first-child )>.input-group-text,
-	.input-group>.input-group-prepend:first-child>.btn:not (:first-child ),
-	.input-group>.input-group-prepend:first-child>.input-group-text:not (:first-child
-	){
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0
-}
+	
+(
+:last-child
+ 
+)>
+.input-group-text
+,
+.input-group
+>
+.input-group-append
+:last-child
+>
+.btn
+:not
 
+	
+(
+:last-child
+ 
+)
+:not
+ 
+(
+.dropdown-toggle
+ 
+),
+.input-group
+>
+.input-group-append
+:last-child
+>
+.input-group-text
+:not
+
+	
+(
+:last-child
+ 
+){
+border-top-right-radius
+:
+ 
+0;
+border-bottom-right-radius
+:
+ 
+0
+}
+.input-group
+>
+.input-group-append
+>
+.btn
+,
+.input-group
+>
+.input-group-append
+>
+.input-group-text
+,
+.input-group
+>
+.input-group-prepend
+:not
+ 
+(
+:first-child
+ 
+)>
+.btn
+,
+.input-group
+>
+.input-group-prepend
+:not
+ 
+(
+:first-child
+ 
+)>
+.input-group-text
+,
+.input-group
+>
+.input-group-prepend
+:first-child
+>
+.btn
+:not
+ 
+(
+:first-child
+ 
+),
+.input-group
+>
+.input-group-prepend
+:first-child
+>
+.input-group-text
+:not
+ 
+(
+:first-child
+
+	
+){
+border-top-left-radius
+:
+ 
+0;
+border-bottom-left-radius
+:
+ 
+0
+}
 .custom-control {
 	position: relative;
 	display: block;
@@ -3788,12 +4313,47 @@ tbody.collapse.show {
 	background-color: #fff
 }
 
-.custom-select[multiple], .custom-select[size]:not ([size="1"] ){
-	height: auto;
-	padding-right: 0.75rem;
-	background-image: none
-}
+.custom-select
+[
+multiple
+]
+,
+.custom-select
+[
+size
+]
+:not
+ 
+(
+[
+size
+=
+"1"
+]
+ 
+){
+height
+:
+ 
+auto
+;
 
+	
+padding-right
+:
+ 
+0
+.75rem
+;
+
+	
+background-image
+:
+ 
+none
+
+
+}
 .custom-select:disabled {
 	color: #868e96;
 	background-color: #e9ecef
@@ -4070,10 +4630,26 @@ tbody.collapse.show {
 	text-decoration: none
 }
 
-.navbar-toggler:not (:disabled ):not (.disabled ){
-	cursor: pointer
-}
+.navbar-toggler
+:not
+ 
+(
+:disabled
+ 
+)
+:not
+ 
+(
+.disabled
+ 
+){
+cursor
+:
+ 
+pointer
 
+
+}
 .navbar-toggler-icon {
 	display: inline-block;
 	width: 1.5em;
@@ -4519,7 +5095,7 @@ tbody.collapse.show {
 .card-header {
 	padding: 0.75rem 1.25rem;
 	margin-bottom: 0;
-	background-color: rgba(0, 0, 0, 0.03);
+	background-color: #0080ff;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125)
 }
 
@@ -4687,19 +5263,43 @@ tbody.collapse.show {
 		border-bottom-right-radius: 0.25rem;
 		border-bottom-left-radius: 0.25rem
 	}
-	.card-group>.card:not (:first-child ):not (:last-child ):not (:only-child
-		){
-		border-radius: 0
-	}
-	.card-group>.card:not (:first-child ):not (:last-child ):not (:only-child
-		) .card-img-top, .card-group>.card:not (:first-child ):not (:last-child
-		):not (:only-child ) .card-img-bottom, .card-group>.card:not (:first-child
-		):not (:last-child ):not (:only-child ) .card-header, .card-group>.card:not
-		(:first-child ):not (:last-child ):not (:only-child ) .card-footer {
-		border-radius: 0
-	}
+	.card-group
+	>
+	.card
+	:not
+	 
+	(
+	:first-child
+	 
+	)
+	:not
+	 
+	(
+	:last-child
+	 
+	)
+	:not
+	 
+	(
+	:only-child
+	
+		
+	){
+	border-radius
+	:
+	 
+	0
 }
 
+.card-group>.card:not (:first-child ):not (:last-child ):not (:only-child
+		 ) .card-img-top, .card-group>.card:not (:first-child ):not (:last-child
+		 ):not (:only-child ) .card-img-bottom, .card-group>.card:not (:first-child
+		 ):not (:last-child ):not (:only-child ) .card-header, .card-group>.card:not
+		 (:first-child ):not (:last-child ):not (:only-child ) .card-footer {
+	border-radius: 0
+}
+
+}
 .card-columns .card {
 	margin-bottom: 0.75rem
 }
@@ -4784,10 +5384,26 @@ tbody.collapse.show {
 	box-shadow: 0 0 0 0.2rem rgba(47, 164, 231, 0.25)
 }
 
-.page-link:not (:disabled ):not (.disabled ){
-	cursor: pointer
-}
+.page-link
+:not
+ 
+(
+:disabled
+ 
+)
+:not
+ 
+(
+.disabled
+ 
+){
+cursor
+:
+ 
+pointer
 
+
+}
 .page-item:first-child .page-link {
 	margin-left: 0;
 	border-top-left-radius: 0.25rem;
@@ -5428,10 +6044,26 @@ to {
 	opacity: .75
 }
 
-.close:not (:disabled ):not (.disabled ){
-	cursor: pointer
-}
+.close
+:not
+ 
+(
+:disabled
+ 
+)
+:not
+ 
+(
+.disabled
+ 
+){
+cursor
+:
+ 
+pointer
 
+
+}
 button.close {
 	padding: 0;
 	background-color: transparent;
@@ -5575,14 +6207,36 @@ button.close {
 	border-top: 1px solid #e9ecef
 }
 
-.modal-footer>:not (:first-child ){
-	margin-left: .25rem
-}
+.modal-footer
+>
+:not
+ 
+(
+:first-child
+ 
+){
+margin-left
+:
+ 
+.25rem
 
-.modal-footer>:not (:last-child ){
-	margin-right: .25rem
-}
 
+}
+.modal-footer
+>
+:not
+ 
+(
+:last-child
+ 
+){
+margin-right
+:
+ 
+.25rem
+
+
+}
 .modal-scrollbar-measure {
 	position: absolute;
 	top: -9999px;
@@ -5964,10 +6618,9 @@ button.close {
 
 @
 supports (-webkit-transform-style: preserve-3d ) or (transform-style: preserve-3d
-	){ .
-	carousel-item-next
-		.carousel-item-left,.carousel-item-prev.carousel-item-right{-webkit-transform:
-		translate3d(0, 0, 0);
+	 ){ . carousel-item-next
+		.carousel-item-left, .carousel-item-prev.carousel-item-right {
+	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0)
 }
 
@@ -5979,9 +6632,8 @@ supports (-webkit-transform-style: preserve-3d ) or (transform-style: preserve-3
 
 @
 supports (-webkit-transform-style: preserve-3d ) or (transform-style: preserve-3d
-	){ .
-	carousel-item-next ,.active.carousel-item-right{-webkit-transform:
-		translate3d(100%, 0, 0);
+	 ){ . carousel-item-next, .active.carousel-item-right {
+	-webkit-transform: translate3d(100%, 0, 0);
 	transform: translate3d(100%, 0, 0)
 }
 
@@ -5993,9 +6645,8 @@ supports (-webkit-transform-style: preserve-3d ) or (transform-style: preserve-3
 
 @
 supports (-webkit-transform-style: preserve-3d ) or (transform-style: preserve-3d
-	){ .
-	carousel-item-prev ,.active.carousel-item-left{-webkit-transform:
-		translate3d(-100%, 0, 0);
+	 ){ . carousel-item-prev, .active.carousel-item-left {
+	-webkit-transform: translate3d(-100%, 0, 0);
 	transform: translate3d(-100%, 0, 0)
 }
 
@@ -7394,7 +8045,8 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus
 
 @
 supports (position: -webkit-sticky ) or (position: sticky ){ .
-	sticky-top {position: -webkit-sticky;
+	sticky-top {
+	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 1020
@@ -8713,54 +9365,79 @@ a.text-dark:hover, a.text-dark:focus {
 		-webkit-box-shadow: none !important;
 		box-shadow: none !important
 	}
-	a:not (.btn ){
-		text-decoration: underline
-	}
-	abbr[title]::after {
-		content: " (" attr(title) ")"
-	}
-	pre {
-		white-space: pre-wrap !important
-	}
-	thead {
-		display: table-header-group
-	}
-	tr, img {
-		page-break-inside: avoid
-	}
-	p, h2, h3 {
-		orphans: 3;
-		widows: 3
-	}
-	h2, h3 {
-		page-break-after: avoid
-	}
-	@page {
-		size: a3
-	}
-	body {
-		min-width: 992px !important
-	}
-	.container {
-		min-width: 992px !important
-	}
-	.navbar {
-		display: none
-	}
-	.badge {
-		border: 1px solid #000
-	}
-	.table {
-		border-collapse: collapse !important
-	}
-	.table td, .table th {
-		background-color: #fff !important
-	}
-	.table-bordered th, .table-bordered td {
-		border: 1px solid #ddd !important
-	}
+	a
+	:not
+	 
+	(
+	.btn
+	 
+	){
+	text-decoration
+	:
+	 
+	underline
+	
+	
 }
 
+abbr[title]::after {
+	content: " (" attr(title) ")"
+}
+
+pre {
+	white-space: pre-wrap !important
+}
+
+thead {
+	display: table-header-group
+}
+
+tr, img {
+	page-break-inside: avoid
+}
+
+p, h2, h3 {
+	orphans: 3;
+	widows: 3
+}
+
+h2, h3 {
+	page-break-after: avoid
+}
+
+@page {
+	size: a3
+}
+
+body {
+	min-width: 992px !important
+}
+
+.container {
+	min-width: 992px !important
+}
+
+.navbar {
+	display: none
+}
+
+.badge {
+	border: 1px solid #000
+}
+
+.table {
+	border-collapse: collapse !important
+}
+
+.table td, .table th {
+	background-color: #fff !important
+}
+
+.table-bordered th, .table-bordered td {
+	border: 1px solid #ddd !important
+}
+
+}
 .bg-primary {
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#54b4eb),
 		color-stop(60%, #2FA4E7), to(#1d9ce5));
