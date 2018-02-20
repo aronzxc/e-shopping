@@ -11,7 +11,7 @@
    http://www.springframework.org/schema/mvc/spring-mvc.xsd
    ">
 
-	<context:component-scan base-package="net.aron.eshopping.controller"/>
+	<context:component-scan base-package="net.aron.eshopping"/>
 	<context:component-scan base-package="net.aron.eshoppingbackend"/>
 
 	<bean id="viewResolver"

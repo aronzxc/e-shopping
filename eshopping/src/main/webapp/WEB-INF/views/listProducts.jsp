@@ -38,7 +38,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<table id="productListTable"
-						class="table table-striped table-hover">
+						class="table table-hover">
 
 						<thead>
 							<tr>
@@ -57,7 +57,7 @@
 								<th>Name</th>
 								<th>Brand</th>
 								<th>Price</th>
-								<th>Qty. Available</th>
+								<th>Quantity</th>
 								<th></th>
 							</tr>
 						</tfoot>
