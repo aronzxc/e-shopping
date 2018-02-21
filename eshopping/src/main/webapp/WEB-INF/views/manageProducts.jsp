@@ -1,61 +1,91 @@
 
 <%@taglib prefix="sf" uri="http://www.springframework.org/tags/form" %>
-<div class="container col-md-8">
+<div class="container col-md-6">
+
+<c:if test="${not empty message}">
+	<div class="col-xs-12">
+		<div class="alert alert-success alert-dismissible">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			${message}
+		</div>
+	</div>
+</c:if>
 	<div class="card">
 		<h3 class="card-header text-white">Product Management</h3>
 		<div class="card-block">
 			<div class="card-body">
 			
+			<!-- FORM ELEMENTS -->
 			
-				<sf:form modelAttribute="product">
-					<div class="form-group">
-						<label for="name" class="control-label">Enter Product Name:</label>
-							<sf:input type="text" class="form-control" path="name" id="name" placeholder="Product Name" />
-							<em class="help-block">Please Enter Product Name!</em>
+				<sf:form modelAttribute="product"
+					action="${contextRoot}/manage/products"
+					method="POST"
+					enctype="multipart/form-data"
+				>
+				
+					<div class="form-group row">
+						<label for="name" class="col-sm-4 col-form-label text-right">Enter Product Name:</label>
+							<div class="col-md-8">
+					      		<sf:input type="text" class="form-control" path="name" id="name" placeholder="Product Name" />
+					      		<sf:errors path="name" cssClass="help-block" element="em" />
+					    	</div>
 					</div>
 					
-					<div class="form-group">
-						<label for="brand" class="control-label">Enter Brand Name:</label>
-							<sf:input type="text" class="form-control" path="brand" id="brand" placeholder="Brand Name" />
-							<em class="help-block">Please Enter Brand Name!</em>
+					<div class="form-group row">
+						<label for="brand" class="col-sm-4 col-form-label text-right">Enter Brand Name:</label>
+							<div class="col-md-8">
+					      		<sf:input type="text" class="form-control" path="brand" id="brand" placeholder="Brand Name" />
+					      		<sf:errors path="brand" cssClass="help-block" element="em" />
+					    	</div>
 					</div>
 					
-					<div class="form-group">
-    					<label for="description" class="control-label">Product Description:</label>
-    					<sf:textarea class="form-control" path="description" id="description" rows="4" placeholder="Product Description..."></sf:textarea>
-  					</div>
+					<div class="form-group row">
+    					<label for="description" class="col-sm-4 col-form-label text-right">Product Description:</label>
+    					<div class="col-md-8">
+					      	<sf:textarea class="form-control" path="description" id="description" rows="4" placeholder="Product Description..."></sf:textarea>
+					    	<sf:errors path="description" cssClass="help-block" element="em" />
+					    </div>
+   					</div>
 					
-					<div class="form-group">
-						<label for="unitPrice" class="control-label">Enter Unit Price:</label>
-							<sf:input type="number" class="form-control" path="unitPrice" id="unitPrice" placeholder="Unit Price" />
+					
+					<div class="form-group row">
+						<label for="unitPrice" class="col-sm-4 col-form-label text-right">Enter Unit Price:</label>
+							<div class="col-md-8">
+					      		<sf:input type="number" class="form-control" path="unitPrice" id="unitPrice" placeholder="Unit Price" />
+					      		<sf:errors path="unitPrice" cssClass="help-block" element="em" />
+					    	</div>
 					</div>
 					
-					<div class="form-group">
-						<label for="quantity" class="control-label">Quantity:</label>
+					<div class="form-group row">
+						<label for="quantity" class="col-sm-4 col-form-label text-right">Quantity:</label>
+						<div class="col-md-8">
 							<sf:input type="number" class="form-control" path="quantity" id="quantity" placeholder="Quantity" />
+						</div>
 					</div>
 					
-					<div class="form-group">
-    					<label for="categoryId" class="control-label">Select Category:</label>
+					<!-- File element for image upload -->
+					<div class="form-group row">
+						<label for="file" class="col-sm-4 col-form-label text-right">Select Image:</label>
+						<div class="col-md-8">
+							<sf:input type="file" class="form-control" path="file" id="file" />
+							<sf:errors path="file" cssClass="help-block" element="em" />
+						</div>
+					</div>
+					
+					<div class="form-group row">
+    					<label for="categoryId" class="col-sm-4 col-form-label text-right">Select Category:</label>
+    					<div class="col-md-8">
     						<sf:select class="form-control" id="categoryId" path="categoryId" 
     							items="${categories}"
     							itemLabel="name"
     							itemValue="id"
-    						/>	
+    						/>
+    					</div>		
   					</div>
 					
-					
-					<div class="form-group">
-						<label for="exampleInputFile">File input</label> <input
-							type="file" class="form-control-file" id="exampleInputFile"
-							aria-describedby="fileHelp"> <small id="fileHelp"
-							class="form-text text-muted">This is some placeholder
-							block-level help text for the above input. It's a bit lighter and
-							easily wraps to a new line.</small>
-					</div>
-					
-					<div class="form-group">
-						<button type="submit" name="submit" id="submit" class="btn btn-primary">Submit</button>
+					<div class="form-group row">
+						<div class="col-md-12">
+						<button type="submit" name="submit" id="submit" class="btn btn-primary float-right">Submit</button>
 						
 						<!-- Hidden Fields for Products -->
 						<sf:hidden path="id"/>
@@ -63,7 +93,8 @@
 						<sf:hidden path="supplierId"/>
 						<sf:hidden path="active"/>
 						<sf:hidden path="purchases"/>
-						<sf:hidden path="views"/>	
+						<sf:hidden path="views"/>
+						</div>	
 					</div>
 									
 					
