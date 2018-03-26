@@ -209,18 +209,13 @@ var $adminProductsTable = $('#adminProductsTable');
 						
 						return str;
 					}
-						
-					
 				},
-				
 				{
 					data: 'id',
 					bSortable: false,
 					mRender: function(data, type, row){
-						
 						var str='';
-						
-						str += '<a href="${contextRoot}/manage/'+data+'/product" class="btn btn-warning">';
+						str += '<a href="'+window.contextRoot+'/manage/'+data+'/product" class="btn btn-warning">';
 						str += '<span class="glyphicon glyphicon-pencil"></span></a>';
 						
 						return str;
@@ -244,10 +239,14 @@ var $adminProductsTable = $('#adminProductsTable');
 						callback: function(confirmed){
 							if(confirmed){
 								console.log(value);
-								bootbox.alert({
+								
+								var activationUrl = window.contextRoot + '/manage/product/' + value + '/activation';
+								$.post(activationUrl, function(data){
+									bootbox.alert({
 									size: 'medium',
 									title: 'Information',
-									message: 'You are going to perform operation on product' + value
+									message: data	
+								});
 								});
 							}else{
 								checkbox.prop('checked', !checked);
