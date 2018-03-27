@@ -3438,6 +3438,10 @@ fieldset[disabled] .btn-link:focus {
   line-height: 1.3333333;
   border-radius: 6px;
 }
+.btn-xs {
+  // line-height: ensure proper height of button next to extra small input 
+  @include button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius);
+}
 .btn-sm,
 .btn-group-sm > .btn {
   padding: 5px 10px;

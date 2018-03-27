@@ -4507,7 +4507,10 @@ a
 .btn-block+.btn-block {
 	margin-top: .5rem
 }
-
+.btn-xs {
+  // line-height: ensure proper height of button next to extra small input 
+  @include button-size($padding-y, $padding-x, $font-size, $line-height, $border-radius);
+}
 input
 [type=button]
 .btn-block, input
