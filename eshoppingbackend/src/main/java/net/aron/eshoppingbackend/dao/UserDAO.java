@@ -1,5 +1,7 @@
 package net.aron.eshoppingbackend.dao;
 
+import java.util.List;
+
 import net.aron.eshoppingbackend.dto.Address;
 import net.aron.eshoppingbackend.dto.Cart;
 import net.aron.eshoppingbackend.dto.User;
@@ -8,10 +10,13 @@ public interface UserDAO {
 
 	//add user
 	boolean addUser(User user);
+	User getByEmail(String email);
 	
 	//add an address
 	boolean addAddress(Address address);
+	Address getBillingAddress(User user);
+	List<Address> listShippingAddresses(User user);
 	
-	//add a cart
-	boolean addCart(Cart cart);
+	//update a cart
+	boolean updateCart(Cart cart);
 }

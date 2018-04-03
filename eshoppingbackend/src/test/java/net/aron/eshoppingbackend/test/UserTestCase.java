@@ -22,14 +22,14 @@ public class UserTestCase {
 	@BeforeClass
 	public static void init() {
 		context = new AnnotationConfigApplicationContext();
-		context.scan("net.aron.shoppingbackend");
+		context.scan("net.aron.eshoppingbackend");
 		context.refresh();
 		
 		userDAO = (UserDAO) context.getBean("userDAO");
 
 	}
 	
-	@Test
+/*	@Test
 	public void testAdd() {
 		
 		 user = new User();
@@ -60,14 +60,13 @@ public class UserTestCase {
 		if(user.getRole().equals("USER")) {
 			//create a cart for this user
 			cart = new Cart();
-			cart.setUserId(user.getId());
+			cart.setUser(user);
 			
 			//add the cart
 			 assertEquals("Failed to add cart!", true, userDAO.addCart(cart));
 			 
 			//add a shipping address for this user
 			 
-			 assertEquals("Failed to add user!", true, userDAO.addUser(user));
 			 address = new Address();
 			 address.setAddressLineOne("0600 Crusher Bigte");
 			 address.setAddressLineTwo("Near Baranggay Hall");
@@ -85,5 +84,116 @@ public class UserTestCase {
 			 assertEquals("Failed to add shipping address!",true, userDAO.addAddress(address));
 		}
 	}
+	*/
+	
+	/*@Test
+	public void testAdd() {
+		
+		 user = new User();
+		 user.setFirstName("Aaron");
+		 user.setLastName("Claudo");
+		 user.setEmail("aronzxc@gmail.com");
+		 user.setContactNumber("09262462614");
+		 user.setRole("USER");
+		 user.setPassword("wordpass");
+		 
+		if(user.getRole().equals("USER")) {
+			//create a cart for this user
+			cart = new Cart();
+			cart.setUser(user);
+			
+			//attach cart with the user
+			user.setCart(cart);
+			
+		}
+		//add the user
+		 assertEquals("Failed to add user!", true, userDAO.addUser(user));
+	}*/
+	
+	
+	/*@Test
+	public void testUpdateCart() {
+		//fetch the user by it's email
+		user = userDAO.getByEmail("aronzxc@gmail.com");
+		
+		//get the cart of the user
+		cart = user.getCart();
+		
+		cart.setGrandTotal(5555);
+		cart.setCartLines(2);
+		
+		assertEquals("Failed to update the cart!", true, userDAO.updateCart(cart));
+		
+		}*/
+	
+	/*@Test
+	public void testAddAddress() {
+		
+		//we need to add a user
+		 user = new User();
+		 user.setFirstName("Aaron");
+		 user.setLastName("Claudo");
+	 	 user.setEmail("aronzxc@gmail.com");
+		 user.setContactNumber("09262462614");
+		 user.setRole("USER");
+		 user.setPassword("wordpass");
+		 
+		//add the user
+		 assertEquals("Failed to add user!",true, userDAO.addUser(user));
+		 
+		//we are going to add the address
+		 address = new Address();
+		 address.setAddressLineOne("0600 Crusher Bigte");
+		 address.setAddressLineTwo("Near Baranggay Hall");
+		 address.setCity("Norzagaray");
+		 address.setState("Bulacan");
+		 address.setCountry("Philippines");
+		 address.setPostalCode("3023");
+		 address.setBilling(true);	
+		 
+		 //attached the user to the address
+		 address.setUser(user);
+		 
+		 assertEquals("Failed to add address!", true, userDAO.addAddress(address));
+		 
+		//also add the shipping address
+		 address = new Address();
+		 address.setAddressLineOne("0601 Crusher Bigte");
+		 address.setAddressLineTwo("Near Baranggay Hall");
+		 address.setCity("Norzagaray");
+		 address.setState("Bulacan");
+		 address.setCountry ("Philippines");
+		 address.setPostalCode("3023");
+		 //set shipping to true
+		 address.setShipping(true);
+		 
+		//attached the user to the address
+		 address.setUser(user);
+		 
+		 assertEquals("Failed to add shipping address!", true, userDAO.addAddress(address));
+	}*/
+	
+	
+	@Test
+	public void testAddAddress() {
+		user = userDAO.getByEmail("aronzxc@gmail.com");
+		
+		//also add the shipping address
+		 address = new Address();
+		 address.setAddressLineOne("1234 Crusher Bigte");
+		 address.setAddressLineTwo("Near Baranggay Hall");
+		 address.setCity("Garay");
+		 address.setState("Tugegarao");
+		 address.setCountry ("Philippines");
+		 address.setPostalCode("3023");
+		 //set shipping to true
+		 address.setShipping(true);
+		 
+		//attached the user to the address
+		 address.setUser(user);
+		 
+		 assertEquals("Failed to add shipping address!", true, userDAO.addAddress(address));
+	}
+	
 	
 }
