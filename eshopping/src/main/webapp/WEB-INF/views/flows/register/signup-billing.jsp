@@ -74,12 +74,12 @@
 						<div class="form-group row mx-auto">
 							<div class="col-md-offset-12 col-md-12">
 								<button type="submit" name="_eventId_personal"
-									class="btn btn-primary  float-left">
+									class="btn btn-outline-primary  float-left">
 									<span class="glyphicon glyphicon-chevron-left"></span> Back -
 									Personal
 								</button>
 								<button type="submit" name="_eventId_confirm"
-									class="btn btn-primary  float-right">
+									class="btn btn-outline-primary  float-right">
 									Next - Confirm<span class="glyphicon glyphicon-chevron-right"></span>
 								</button>
 							</div>

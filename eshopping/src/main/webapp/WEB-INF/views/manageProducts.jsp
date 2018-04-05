@@ -87,25 +87,28 @@
 								class="col-sm-4 col-form-label text-right">Select
 								Category:</label>
 							<div class="col-md-8">
-								<sf:select class="form-control" id="categoryId"
-									path="categoryId" items="${categories}" itemLabel="name"
-									itemValue="id" />
-								<c:if test="${product.id == 0}">
-									<br />
-									<button type="button" data-toggle="modal"
-										data-target="#myCategoryModal"
-										class="btn btn-warning btn-xs float-right"
-										data-toggle="tooltip" title="Add Category">
-										<span class="glyphicon-plus"></span>
-									</button>
-								</c:if>
+								<div class="input-group">
+									<sf:select class="form-control" id="categoryId"
+										path="categoryId" items="${categories}" itemLabel="name"
+										itemValue="id" />
+									<div class="input-group-append">
+										<c:if test="${product.id == 0}">
+											<button type="button" data-toggle="modal"
+												data-target="#myCategoryModal"
+												class="btn btn-outline-warning"
+												data-toggle="tooltip" title="Add Category">
+												<span class="glyphicon-plus"></span>
+											</button>
+										</c:if>
+									</div>
+								</div>
 							</div>
 						</div>
 
 						<div class="form-group row">
 							<div class="col-md-12">
 								<button type="submit" name="submit" id="submit"
-									class="btn btn-primary float-right">Submit</button>
+									class="btn btn-outline-primary float-right">Submit</button>
 
 								<!-- Hidden Fields for Products -->
 								<sf:hidden path="id" />
@@ -178,7 +181,9 @@
 			<div class="modal-content">
 				<!-- Modal Header -->
 				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+					<button type="button" class="close" data-dismiss="modal">
+						<span>&times;</span>
+					</button>
 					<h4 class="modal-title">Add New Category</h4>
 				</div>
 				<div class="modal-body">
@@ -188,16 +193,21 @@
 						class="form-horizontal">
 
 						<div class="form-group">
-							<label for="category_name" class="control-label col-md-4">Category Name</label>
-								<sf:input type="text" id="category_name" path="name" class="form-control"/>
+							<label for="category_name" class="control-label col-md-4">Category
+								Name</label>
+							<sf:input type="text" id="category_name" path="name"
+								class="form-control" />
 						</div>
 						<div class="form-group">
-							<label for="category_description" class="control-label col-md-8">Category Description</label>
-								<sf:textarea cols="" rows="5" path="description" id="category_description" class="form-control"/>
+							<label for="category_description" class="control-label col-md-8">Category
+								Description</label>
+							<sf:textarea cols="" rows="5" path="description"
+								id="category_description" class="form-control" />
 						</div>
 						<div class="form-group">
 							<div class="col-md-offset-4 col-md-8">
-								<input type="submit" value="Add Category" class="btn btn-primary" />
+								<input type="submit" value="Add Category"
+									class="btn btn-primary" />
 							</div>
 						</div>
 

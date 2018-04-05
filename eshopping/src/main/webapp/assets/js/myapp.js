@@ -215,8 +215,7 @@ var $adminProductsTable = $('#adminProductsTable');
 					bSortable: false,
 					mRender: function(data, type, row){
 						var str='';
-						str += '<a href="'+window.contextRoot+'/manage/'+data+'/product" class="btn btn-warning">';
-						str += '<span class="glyphicon glyphicon-pencil"></span></a>';
+						str += '<a href="'+window.contextRoot+'/manage/'+data+'/product" class="btn btn-outline-warning"><span class="glyphicon glyphicon-pencil"></span></a>';
 						
 						return str;
 					}

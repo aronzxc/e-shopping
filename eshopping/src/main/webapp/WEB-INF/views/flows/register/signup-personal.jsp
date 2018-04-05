@@ -43,7 +43,7 @@
 							<label for="contactNumber" class="col-sm-4 col-form-label text-right">Contact Number</label>
 							<div class="col-md-8">
 								<sf:input type="text" path="contactNumber" id="contactNumber" class="form-control"
-									placeholder="XXXXXXXXXX" maxlength="10" />
+									placeholder="XXXXXXXXX" maxlength="10" />
 								<sf:errors path="contactNumber" cssClass="help-block"
 									element="em" />
 							</div>
@@ -73,7 +73,7 @@
 						<div class="form-group row">
 							<div class="col-md-12">
 								<button type="submit" name="_eventId_billing"
-									class="btn btn-primary float-right">
+									class="btn btn-outline-primary float-right">
 									Next - Billing <span class="glyphicon glyphicon-chevron-right"></span>
 								</button>
 							</div>
