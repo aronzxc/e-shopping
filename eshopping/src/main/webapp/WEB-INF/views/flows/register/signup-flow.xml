@@ -23,7 +23,7 @@
 	
 	<action-state id="validate">
 		<evaluate expression="registerHandler.validateUser(user, messageContext)" />
-		<transition on="success" to="billine" />
+		<transition on="success" to="billing" />
 		<transition on="failure" to="personal" />
 	</action-state>
 	
