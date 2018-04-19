@@ -38,7 +38,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<table id="productListTable"
-						class="table table-hover">
+						class="table table-borderless">
 
 						<thead>
 							<tr>

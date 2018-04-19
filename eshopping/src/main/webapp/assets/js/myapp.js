@@ -19,18 +19,18 @@ $(function() {
 		$('#a_' + menu).addClass('active');
 		break;
 	}
-	
-	//to tackle the csrf token
+
+	// to tackle the csrf token
 	var token = $('meta[name="_csrf"]').attr('content');
 	var header = $('meta[name="_csrf_header"]').attr('content');
-	
-	if(token.length > 0 && header.length > 0){
-		
-		//set the token for ajax request
-		$(document).ajaxSend(function(e, xhr, options){
+
+	if (token.length > 0 && header.length > 0) {
+
+		// set the token for ajax request
+		$(document).ajaxSend(function(e, xhr, options) {
 			xhr.setRequestHeader(header, token);
 		});
-		
+
 	}
 
 	// code for jquery datatable
@@ -100,16 +100,25 @@ $(function() {
 											+ window.contextRoot
 											+ '/show/'
 											+ data
-											+ '/product" class="btn btn-primary"><span class="glyphicon glyphicon-eye-open"></span></a> &#160;';
+											+ '/product" class="btn btn-outline-primary"><span class="glyphicon glyphicon-eye-open"></span></a> &#160;';
 
 									if (row.quantity < 1) {
-										str += '<a href="javascript:void(0)" class="btn btn-success disabled"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
+										str += '<a href="javascript:void(0)" class="btn btn-outline-success disabled"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
 									} else {
-										str += '<a href="'
+
+										if (userRole == 'ADMIN') {
+											str += '<a href="'
 												+ window.contextRoot
-												+ '/cart/add/'
+												+ '/manage/'
 												+ data
-												+ '/product" class="btn btn-success"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
+												+ '/product" class="btn btn-outline-warning"><span class="glyphicon glyphicon-pencil"></span></a>';
+										} else {
+											str += '<a href="'
+													+ window.contextRoot
+													+ '/cart/add/'
+													+ data
+													+ '/product" class="btn btn-outline-success"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
+										}
 									}
 
 									return str;
@@ -401,7 +410,7 @@ $(function() {
 			}
 		});
 	}
-	
-	//-----------------
+
+	// -----------------
 
 });

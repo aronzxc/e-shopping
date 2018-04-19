@@ -27,7 +27,7 @@
 			<p>${product.description}</p>
 			<hr />
 			<h4>
-				Price: <strong> &#8369; ${product.unitPrice} /-</strong>
+				Price: <strong> &#8369; ${product.unitPrice}</strong>
 			</h4>
 			<hr />
 
@@ -42,23 +42,33 @@
 				</c:otherwise>
 			</c:choose>
 
+			<security:authorize access="hasAuthority('USER')">
 			<c:choose>
 				<c:when test="${product.quantity < 1}">
 					<a href="javascript:void(0)"
-						class="btn btn-success disabled"><strike> <span
+						class="btn btn-outline-success disabled"><strike> <span
 						class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
 					</strike></a>
 				</c:when>
 				<c:otherwise>
 					<a href="${contextRoot}/cart/add/${product.id}/product"
-						class="btn btn-success"> <span
+						class="btn btn-outline-success"> <span
 						class="glyphicon glyphicon-shopping-cart"></span>Add to Cart
 					</a>
 				</c:otherwise>
 			</c:choose>
+			</security:authorize>
+			
+			<security:authorize access="hasAuthority('ADMIN')">
+			
+			<a href="${contextRoot}/manage/${product.id}/product"
+						class="btn btn-outline-warning"> <span
+						class="glyphicon glyphicon-pencil"></span>Edit
+					</a>
+			
+			</security:authorize>
 
-
-			<a href="${contextRoot}/show/all/products" class="btn btn-primary">Back</a>
+			<a href="${contextRoot}/show/all/products" class="btn btn-outline-primary">Back</a>
 		</div>
 
 	</div>
