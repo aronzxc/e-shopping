@@ -37,32 +37,33 @@
 
 			<div class="row">
 				<div class="col-md-12">
-					<table id="productListTable"
-						class="table table-borderless">
+					<div style="overflow: auto">
+						<table id="productListTable" class="table table-borderless">
 
-						<thead>
-							<tr>
-								<th></th>
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Price</th>
-								<th>Qty. Available</th>
-								<th></th>
-							</tr>
-						</thead>
+							<thead>
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Brand</th>
+									<th>Price</th>
+									<th>Qty. Available</th>
+									<th></th>
+								</tr>
+							</thead>
 
-						<tfoot>
-							<tr>
-								<th></th>
-								<th>Name</th>
-								<th>Brand</th>
-								<th>Price</th>
-								<th>Quantity</th>
-								<th></th>
-							</tr>
-						</tfoot>
+							<tfoot>
+								<tr>
+									<th></th>
+									<th>Name</th>
+									<th>Brand</th>
+									<th>Price</th>
+									<th>Quantity</th>
+									<th></th>
+								</tr>
+							</tfoot>
 
-					</table>
+						</table>
+					</div>
 				</div>
 			</div>
 

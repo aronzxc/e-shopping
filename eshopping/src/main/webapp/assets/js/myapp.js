@@ -102,22 +102,24 @@ $(function() {
 											+ data
 											+ '/product" class="btn btn-outline-primary"><span class="glyphicon glyphicon-eye-open"></span></a> &#160;';
 
-									if (row.quantity < 1) {
-										str += '<a href="javascript:void(0)" class="btn btn-outline-success disabled"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
-									} else {
-
-										if (userRole == 'ADMIN') {
-											str += '<a href="'
+									if (userRole == 'ADMIN') {
+										str += '<a href="'
 												+ window.contextRoot
 												+ '/manage/'
 												+ data
 												+ '/product" class="btn btn-outline-warning"><span class="glyphicon glyphicon-pencil"></span></a>';
+									} else {
+
+										if (row.quantity < 1) {
+											str += '<a href="javascript:void(0)" class="btn btn-outline-success disabled"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
 										} else {
+
 											str += '<a href="'
 													+ window.contextRoot
 													+ '/cart/add/'
 													+ data
 													+ '/product" class="btn btn-outline-success"><span class="glyphicon glyphicon-shopping-cart"></span></a>';
+
 										}
 									}
 
