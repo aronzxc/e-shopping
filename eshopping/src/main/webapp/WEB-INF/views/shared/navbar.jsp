@@ -62,7 +62,7 @@
 							</security:authorize>
 							
 							<li>
-								<a href="${contextRoot}/logout" class="dropdown-item">Logout</a>
+								<a href="${contextRoot}/perform-logout" class="dropdown-item">Logout</a>
 							</li>
 						</ul>
 					

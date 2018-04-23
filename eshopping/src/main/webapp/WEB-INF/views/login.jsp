@@ -64,12 +64,21 @@
 
 			<div>
 				<div class="container col-sm-4">
-
+					<!-- Display only if the credentials are invalid -->
 					<c:if test="${not empty message}">
 						<div class="col-xs-12">
 							<div class="alert alert-danger">
 								<!-- <button type="button" class="close" data-dismiss="alert">&times;</button> -->
 								${message}
+							</div>
+						</div>
+					</c:if>
+					<!-- Display only when user logged out -->
+					<c:if test="${not empty logout}">
+						<div class="col-xs-12">
+							<div class="alert alert-success">
+								<!-- <button type="button" class="close" data-dismiss="alert">&times;</button> -->
+								${logout}
 							</div>
 						</div>
 					</c:if>
