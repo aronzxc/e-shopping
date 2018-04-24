@@ -296,3 +296,4 @@ input:checked+.slider:before {
 .unavailable{
 	color:red;
 }
+.visible-xs{display:none!important}
