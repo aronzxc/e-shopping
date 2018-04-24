@@ -5,6 +5,9 @@ $(function() {
 	case 'Manage Products':
 		$('#manageProducts').addClass('active');
 		break;
+	case 'User Cart':
+		$('#userCart').addClass('active');
+		break;
 	case 'About Us':
 		$('#about').addClass('active');
 		break;
