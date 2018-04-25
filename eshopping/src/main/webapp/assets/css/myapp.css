@@ -292,6 +292,7 @@ input:checked+.slider:before {
 	width: 100px;
 	height: 100px;
 }
+@media (max-width:767px){.hidden-xs{display:none!important}}
 
 .unavailable{
 	color:red;

@@ -24,12 +24,12 @@
 						<tr>
 							<td data-th="Product">
 								<div class="row">
-									<div class="col-sm-2 hidden-sm">
+									<div class="col-sm-3">
 										<img src="${images}/${cartLine.product.code}.jpg"
 											alt="${cartLine.product.name}" class="img-responsive cartImg" />
 									</div>
-									<div class="col-sm-10">
-										<h4 class="nomargin">${cartLine.product.name}
+									<div class="col-sm-9">
+										<h4>${cartLine.product.name}
 											<c:if test="${cartLine.available == false}">
 												<strong class="unavailable">(Not Available)</strong>
 											</c:if>
@@ -51,13 +51,12 @@
 									class="btn btn-outline-info btn-sm">
 									<span class="glyphicon glyphicon-refresh"></span>
 								</button>
-								<button class="btn btn-outline-danger btn-sm">
+								<a href="${contextRoot}/cart/${cartLine.id}/delete" class="btn btn-outline-danger btn-sm">
 									<span class="glyphicon glyphicon-trash"></span>
-								</button>
+								</a>
 							</td>
 						</tr>
 					</c:forEach>
-
 
 				</tbody>
 				<tfoot>
@@ -66,7 +65,7 @@
 								${userModel.cart.grandTotal}</strong></td>
 					</tr>
 					<tr>
-						<td><a href="#" class="btn btn-outline-warning"><span
+						<td><a href="${contextRoot}/show/all/products" class="btn btn-outline-warning"><span
 								class="glyphicon glyphicon-chevron-left"></span> Continue
 								Shopping</a></td>
 						<td colspan="2" class="hidden-sm"></td>
