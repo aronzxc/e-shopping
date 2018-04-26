@@ -83,7 +83,7 @@
 						</div>
 					</c:if>
 					
-					<div class="card">
+					<div class="card shadow mt-5">
 						<h3 class="card-header text-white">Login</h3>
 						<div class="card-block">
 							<div class="card-body pb-0">

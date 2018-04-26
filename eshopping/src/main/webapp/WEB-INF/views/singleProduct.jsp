@@ -2,7 +2,7 @@
 	<!-- Breadcrumb -->
 	<div class="row">
 		<div class="col-lg-12">
-			<ol class="breadcrumb">
+			<ol class="breadcrumb shadow">
 				<li class="breadcrumb-item"><a href="${contextRoot}/home/">Home</a></li>
 				<li class="breadcrumb-item"><a
 					href="${contextRoot}/show/all/products">Products</a></li>
@@ -11,10 +11,10 @@
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="row bg-white p-5 rounded border-left border-primary shadow">
 		<!-- Display Product Image -->
 		<div class="col-xs-12 col-sm-4">
-			<div class="thumbnail">
+			<div class="thumbnail shadow">
 				<img src="${images}/${product.code}.jpg"
 					class="img img-thumbnail img-responsive"></img>
 			</div>

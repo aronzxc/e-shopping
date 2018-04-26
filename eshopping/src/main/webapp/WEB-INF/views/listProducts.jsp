@@ -15,7 +15,7 @@
 						<script>
 							window.categoryID = '';
 						</script>
-						<ol class="breadcrumb">
+						<ol class="breadcrumb shadow">
 							<li class="breadcrumb-item"><a href="${contextRoot}/home">Home</a></li>
 							<li class="breadcrumb-item active">All Products</li>
 						</ol>
@@ -25,7 +25,7 @@
 						<script>
 							window.categoryID = '${category.id}';
 						</script>
-						<ol class="breadcrumb">
+						<ol class="breadcrumb shadow">
 							<li class="breadcrumb-item"><a href="${contextRoot}/home">Home</a></li>
 							<li class="breadcrumb-item active">Category</li>
 							<li class="breadcrumb-item active">${category.name}</li>
@@ -38,7 +38,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div style="overflow: auto">
-						<table id="productListTable" class="table table-borderless">
+						<table id="productListTable" class="table bg-white table-borderless rounded shadow">
 
 							<thead>
 								<tr>

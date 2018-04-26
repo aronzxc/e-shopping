@@ -11,7 +11,7 @@
 				</div>
 			</div>
 		</c:if>
-		<div class="card">
+		<div class="card shadow">
 			<h3 class="card-header text-white">Product Management</h3>
 			<div class="card-block">
 				<div class="card-body">
@@ -139,7 +139,7 @@
 		<div class="col-sm-12">
 			<div style="overflow: auto">
 				<!-- Table for Admin -->
-				<table id="adminProductsTable" class="table table-borderless">
+				<table id="adminProductsTable" class="table bg-white table-borderless shadow">
 
 					<thead>
 						<tr>

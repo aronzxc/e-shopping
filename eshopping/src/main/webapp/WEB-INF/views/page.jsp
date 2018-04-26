@@ -33,7 +33,6 @@
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
 <!-- Bootstrap minty CSS -->
-<link href="${css}/bootstrap.minty.css" rel="stylesheet">
 
 <!-- Bootstrap DATATABLES -->
 <link href="${css}/dataTables.bootstrap4.css" rel="stylesheet">

@@ -4,7 +4,7 @@
 	<!-- column to display the personal details -->
 	<div class="col-sm-6">
 
-		<div class="card text-center">
+		<div class="card text-center shadow">
 			<div class="card-block">
 				<h4 class="card-header text-white">Personal Details</h4>
 			</div>
@@ -28,7 +28,7 @@
 	<!-- column to display the address  -->
 	<div class="col-sm-6">
 
-		<div class="card text-center">
+		<div class="card text-center shadow">
 			<div class="card-block">
 				<h4 class="card-header text-white">Billing Address</h4>
 			</div>
@@ -56,7 +56,7 @@
 
 		<div class="text-center">
 
-			<a href="${flowExecutionUrl}&_eventId_submit" class="btn btn-outline-primary">Confirm</a>
+			<a href="${flowExecutionUrl}&_eventId_submit" class="btn btn-lg btn-primary">Confirm</a>
 
 		</div>
 

@@ -8,7 +8,7 @@
 
 	<c:choose>
 		<c:when test="${not empty cartLines}">
-			<table id="cart" class="table table-borderless">
+			<table id="cart" class="table table-borderless bg-white shadow">
 				<thead>
 					<tr>
 						<th style="width: 50%">Product</th>

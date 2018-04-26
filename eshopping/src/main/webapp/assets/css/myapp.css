@@ -11,7 +11,17 @@ body {
 	padding-top: 70px;
 	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 	height: 100%;
-}
+	/*background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('http://farm3.staticflickr.com/2832/12303719364_c25cecdc28_b.jpg') fixed;
+    background-size: cover;*/
+    background: linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px,
+		transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px,
+		transparent 69px),
+		linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px,
+		transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px,
+		transparent 69px) 0 64px;
+	background-color: #708090;
+	background-size: 64px 128px
+	}
 
 .slide-image {
 	width: 100%;
@@ -51,6 +61,9 @@ body {
 .thumbnail .caption-full {
 	padding: 9px;
 	color: #333;
+}
+.shadow{
+	box-shadow: 0px 5px 10px black;
 }
 
 footer {
@@ -298,3 +311,98 @@ input:checked+.slider:before {
 	color:red;
 }
 .visible-xs{display:none!important}
+.sidebar{
+	position:fixed;
+}
+
+
+
+/* for list group*/
+.list-grp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+.list-grp-item {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, .125);
+    
+}
+.list-grp-item:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: rgba(153,153,255,0.3);
+  opacity: 0;
+  border-radius: 100%;
+  transform: scale(2, 2) translate(-50%);
+  transform-origin: 50% 50%;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  20% {
+    transform: scale(25, 25);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(40, 40);
+  }
+}
+
+.list-grp-item:focus:not(:active)::after {
+  animation: ripple 1s ease-out;
+}
+
+.list-grp-item span {
+  cursor: pointer;
+  display: inline-block;
+    text-decoration:none;
+  position: relative;
+  transition: 0.5s;
+}
+
+.list-grp-item span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.list-grp-item:hover span {
+  padding-right: 25px;
+}
+
+.list-grp-item:hover span:after {
+  opacity: 1;
+  right: 0;
+}.list-grp-item.active {
+	z-index: 2;
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff
+}

@@ -3,7 +3,7 @@
 <div>
 	<div class="container col-md-6">
 
-		<div class="card">
+		<div class="card shadow">
 			<h3 class="card-header text-white">Sign Up - Personal</h3>
 			<div class="card-block">
 				<div class="card-body">
