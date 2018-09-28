@@ -12,7 +12,7 @@
 			</div>
 		</c:if>
 		<div class="card shadow">
-			<h3 class="card-header text-white">Product Management</h3>
+			<h3 class="card-header text-primary">Product Management</h3>
 			<div class="card-block">
 				<div class="card-body">
 

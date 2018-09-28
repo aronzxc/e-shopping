@@ -1,4 +1,4 @@
-<h1 class="my-4">Categories</h1>
+<h1 class="my-4 txt-white">Categories</h1>
 <div class="list-grp">
 
 	<c:forEach items="${categories}" var="category">

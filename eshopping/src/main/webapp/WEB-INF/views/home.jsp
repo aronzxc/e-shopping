@@ -16,7 +16,7 @@
               <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
             </ol>
-            <div class="carousel-inner rounded border-left border-primary shadow" role="listbox">
+            <div class="carousel-inner rounded shadow" role="listbox">
               <div class="carousel-item active">
                 <img class="d-block img-fluid" src="${images}/banner1.jpg" alt="First slide">
               </div>

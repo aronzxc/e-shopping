@@ -85,8 +85,8 @@ public class UserTestCase {
 		}
 	}
 	*/
-	
-	/*@Test
+	/*
+	@Test
 	public void testAdd() {
 		
 		 user = new User();
@@ -94,7 +94,7 @@ public class UserTestCase {
 		 user.setLastName("Claudo");
 		 user.setEmail("aronzxc@gmail.com");
 		 user.setContactNumber("09262462614");
-		 user.setRole("USER");
+		 user.setRole("ADMIN");
 		 user.setPassword("wordpass");
 		 
 		if(user.getRole().equals("USER")) {
@@ -108,8 +108,8 @@ public class UserTestCase {
 		}
 		//add the user
 		 assertEquals("Failed to add user!", true, userDAO.addUser(user));
-	}*/
-	
+	}
+	*/
 	
 	/*@Test
 	public void testUpdateCart() {
@@ -126,7 +126,7 @@ public class UserTestCase {
 		
 		}*/
 	
-	/*@Test
+	@Test
 	public void testAddAddress() {
 		
 		//we need to add a user
@@ -171,7 +171,7 @@ public class UserTestCase {
 		 address.setUser(user);
 		 
 		 assertEquals("Failed to add shipping address!", true, userDAO.addAddress(address));
-	}*/
+	}
 	
 	
 	/*@Test
@@ -195,6 +195,7 @@ public class UserTestCase {
 		 assertEquals("Failed to add shipping address!", true, userDAO.addAddress(address));
 	}*/
 	
+	/*
 	@Test
 	public void testGetAddresses() {
 		user = userDAO.getByEmail("aronzxc@gmail.com");
@@ -203,5 +204,5 @@ public class UserTestCase {
 		
 		assertEquals("Failed to fetch the billing address and size does not match!", "Norzagaray", userDAO.getBillingAddress(user).getCity());
 	}
-	
+	*/
 }

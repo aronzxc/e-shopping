@@ -11,15 +11,7 @@ body {
 	padding-top: 70px;
 	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 	height: 100%;
-	/*background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('http://farm3.staticflickr.com/2832/12303719364_c25cecdc28_b.jpg') fixed;
-    background-size: cover;*/
-    background: linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px,
-		transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px,
-		transparent 69px),
-		linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px,
-		transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px,
-		transparent 69px) 0 64px;
-	background-color: #708090;
+	background-color: black;
 	background-size: 64px 128px
 	}
 
@@ -63,7 +55,7 @@ body {
 	color: #333;
 }
 .shadow{
-	box-shadow: 0px 5px 10px black;
+	box-shadow: 0px 0px 0px grey;
 }
 
 footer {
@@ -339,8 +331,8 @@ input:checked+.slider:before {
     display: block;
     padding: .75rem 1.25rem;
     margin-bottom: -1px;
-    background-color: #ffffff;
-    border: 1px solid rgba(0, 0, 0, .125);
+    background-color: #575757;
+    color: #f4ece1;
     
 }
 .list-grp-item:after{
@@ -350,7 +342,7 @@ input:checked+.slider:before {
   left: 50%;
   width: 10px;
   height: 10px;
-  background: rgba(153,153,255,0.3);
+  background: #cc007a;
   opacity: 0;
   border-radius: 100%;
   transform: scale(2, 2) translate(-50%);
@@ -402,7 +394,24 @@ input:checked+.slider:before {
   right: 0;
 }.list-grp-item.active {
 	z-index: 2;
-	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff
+	color: #f4ece1;
+	background-color: #cc007a;
 }
+
+.bg-pink {
+  color: #f4ece1;
+  background-color: #cc007a;
+}
+
+.txt-white{
+	color: #f4ece1;
+}
+
+
+/*
+light-brown: #f5d59a
+white: #f4ece1
+pink: #cc007a
+black: #000000
+grey: #575757
+*/

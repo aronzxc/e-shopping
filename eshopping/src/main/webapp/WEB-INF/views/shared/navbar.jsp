@@ -1,8 +1,7 @@
 <%@taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-pink fixed-top">
 	<div class="container">
-		<a class="navbar-brand" id="home" href="${contextRoot}/home">Shopping
-			Online</a>
+		<a class="navbar-brand" id="home" href="${contextRoot}/home">preLOVED</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarResponsive" aria-controls="navbarResponsive"
 			aria-expanded="false" aria-label="Toggle navigation">

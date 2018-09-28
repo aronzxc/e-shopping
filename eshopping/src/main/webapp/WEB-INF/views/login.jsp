@@ -49,7 +49,7 @@
 
 
 		<!-- Navigation -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-pink fixed-top">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
