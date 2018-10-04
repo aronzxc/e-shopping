@@ -21,7 +21,7 @@
 		</div>
 
 		<!-- Display Product Description -->
-		<div class="col-xs-12 col-sm-8">
+		<div class="col-xs-12 col-sm-8 txt-grey">
 			<h3>${product.name}</h3>
 			<hr />
 			<p>${product.description}</p>

@@ -38,7 +38,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div style="overflow: auto">
-						<table id="productListTable" class="table bg-white table-borderless rounded shadow">
+						<table id="productListTable" class="table bg-white text-primary table-borderless rounded shadow">
 
 							<thead>
 								<tr>

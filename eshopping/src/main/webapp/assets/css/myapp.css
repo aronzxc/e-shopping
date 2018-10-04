@@ -12,7 +12,8 @@ body {
 	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 	height: 100%;
 	background-color: black;
-	background-size: 64px 128px
+	background-size: 64px 128px;
+	color:#f4ece1;
 	}
 
 .slide-image {
@@ -319,7 +320,8 @@ input:checked+.slider:before {
     -ms-flex-direction: column;
     flex-direction: column;
     padding-left: 0;
-    margin-bottom: 0
+    margin-bottom: 0;
+    background-color: #575757;
 }
 
 .list-grp-item {
@@ -406,7 +408,20 @@ input:checked+.slider:before {
 .txt-white{
 	color: #f4ece1;
 }
+.txt-grey{
+	color: #575757;
+}
 
+/*Height of card in signup-success*/
+.c-height{
+	height: 300px;
+}
+
+/*card in home.jsp*/
+.c-home{
+	background-color: #f4ece1;
+	color: #575757;
+}
 
 /*
 light-brown: #f5d59a

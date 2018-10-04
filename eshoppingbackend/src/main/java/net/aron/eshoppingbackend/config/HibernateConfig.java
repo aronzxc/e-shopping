@@ -38,7 +38,7 @@ public class HibernateConfig {
 		
 		return dataSource;
 	}
-	
+
 	//sessionFactory bean will be available
 	@Bean
 	public SessionFactory getSessionFactory(DataSource dataSource) {

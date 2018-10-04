@@ -139,7 +139,7 @@
 		<div class="col-sm-12">
 			<div style="overflow: auto">
 				<!-- Table for Admin -->
-				<table id="adminProductsTable" class="table bg-white table-borderless shadow">
+				<table id="adminProductsTable" class="table bg-white txt-grey table-borderless shadow">
 
 					<thead>
 						<tr>
